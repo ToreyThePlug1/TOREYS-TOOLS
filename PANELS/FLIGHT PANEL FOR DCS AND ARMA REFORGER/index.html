@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel with Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="panel" id="main-panel">
+        <button class="button" onclick="showThrottlePanel()">Throttle</button>
+        <button class="button" onclick="showAmmunitionPanel()">Ammunition</button>
+        <button class="button" onclick="showFlightPanel()">Flight</button>
+        <button class="button">Strike</button>
+        <button class="button">AUTO-ME</button>
+        <button class="button" onclick="showCredits()">Credits</button>
+    </div>
+
+    <div class="throttle-panel" id="throttle-panel" style="display: none;">
+        <div class="control">
+            <label for="throttle">Throttle</label>
+            <input type="range" id="throttle" name="throttle" min="0" max="100">
+        </div>
+        <div class="control">
+            <label for="brake">Brake</label>
+            <input type="range" id="brake" name="brake" min="0" max="100">
+        </div>
+        <button class="button" onclick="hideThrottlePanel()">Back</button>
+    </div>
+
+    <div class="ammunition-panel" id="ammunition-panel" style="display: none;">
+        <h2>Ammunition Control Panel - F/A-18C</h2>
+
+        <!-- Controls for M61A1 Vulcan 20mm Cannon, AIM-9 Sidewinder, AIM-120 AMRAAM, etc. -->
+
+        <button class="button" onclick="hideAmmunitionPanel()">Back</button>
+    </div>
+
+    <div class="flight-panel" id="flight-panel" style="display: none;">
+        <h2>Flight Control Panel - F/A-18C</h2>
+
+        <!-- Throttle Control -->
+        <div class="control-group">
+            <h3>Throttle</h3>
+            <div class="control">
+                <label for="throttle">Throttle</label>
+                <input type="range" id="throttle-control" name="throttle-control" min="0" max="100">
+            </div>
+        </div>
+
+        <!-- Flaps Control -->
+        <div class="control-group">
+            <h3>Flaps</h3>
+            <div class="control">
+                <label for="flaps">Flaps</label>
+                <select id="flaps" name="flaps">
+                    <option value="up">Up</option>
+                    <option value="half">Half</option>
+                    <option value="full">Full</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Landing Gear Control -->
+        <div class="control-group">
+            <h3>Landing Gear</h3>
+            <div class="control">
+                <label for="landing-gear">Landing Gear</label>
+                <select id="landing-gear" name="landing-gear">
+                    <option value="up">Up</option>
+                    <option value="down">Down</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Trim Control -->
+        <div class="control-group">
+            <h3>Trim</h3>
+            <div class="control">
+                <label for="trim">Trim</label>
+                <input type="range" id="trim" name="trim" min="-10" max="10">
+            </div>
+        </div>
+
+        <!-- Rudder Control -->
+        <div class="control-group">
+            <h3>Rudder</h3>
+            <div class="control">
+                <label for="rudder">Rudder</label>
+                <input type="range" id="rudder" name="rudder" min="-10" max="10">
+            </div>
+        </div>
+
+        <!-- Ailerons Control -->
+        <div class="control-group">
+            <h3>Ailerons</h3>
+            <div class="control">
+                <label for="ailerons">Ailerons</label>
+                <input type="range" id="ailerons" name="ailerons" min="-10" max="10">
+            </div>
+        </div>
+
+        <!-- Elevator Control -->
+        <div class="control-group">
+            <h3>Elevator</h3>
+            <div class="control">
+                <label for="elevator">Elevator</label>
+                <input type="range" id="elevator" name="elevator" min="-10" max="10">
+            </div>
+        </div>
+
+        <button class="button" onclick="hideFlightPanel()">Back</button>
+    </div>
+
+    <script>
+        function showCredits() {
+            alert("Created by @glizzmonster57_37958 and @larrybirdjr on Discord");
+        }
+
+        function showThrottlePanel() {
+            document.getElementById('main-panel').style.display = 'none';
+            document.getElementById('throttle-panel').style.display = 'block';
+        }
+
+        function hideThrottlePanel() {
+            document.getElementById('main-panel').style.display = 'block';
+            document.getElementById('throttle-panel').style.display = 'none';
+        }
+
+        function showAmmunitionPanel() {
+            document.getElementById('main-panel').style.display = 'none';
+            document.getElementById('ammunition-panel').style.display = 'block';
+        }
+
+        function hideAmmunitionPanel() {
+            document.getElementById('main-panel').style.display = 'block';
+            document.getElementById('ammunition-panel').style.display = 'none';
+        }
+
+        function showFlightPanel() {
+            document.getElementById('main-panel').style.display = 'none';
+            document.getElementById('flight-panel').style.display = 'block';
+        }
+
+        function hideFlightPanel() {
+            document.getElementById('main-panel').style.display = 'block';
+            document.getElementById('flight-panel').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

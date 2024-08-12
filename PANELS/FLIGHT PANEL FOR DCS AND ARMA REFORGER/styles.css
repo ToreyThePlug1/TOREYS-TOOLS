@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.panel, .throttle-panel {
+    width: 650px;
+    height: 500px;
+    padding: 20px;
+    background-image: url('toreys_flight_tool.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.control {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.control label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.control input[type="range"] {
+    width: 100%;
+}
