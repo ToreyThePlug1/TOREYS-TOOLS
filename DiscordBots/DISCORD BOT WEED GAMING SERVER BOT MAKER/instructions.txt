@@ -1,0 +1,59 @@
+Custom Instructions to Set Up Your Discord Server with the Bot
+Step 1: Create a New Discord Server
+Open Discord: Log into your Discord account.
+Create a New Server:
+Click the plus icon + on the left-hand side of the Discord app (server list).
+Select "Create My Own".
+Name your server (e.g., "Weed & Gaming Community").
+Choose your server region if prompted.
+Click "Create".
+Step 2: Invite the Bot to Your Server
+Get the Bot's Invite Link:
+Use the bot's invite link (provided by the developer or generated through the Discord Developer Portal).
+Invite the Bot:
+Click on the invite link.
+Select the server you just created from the dropdown menu.
+Ensure the necessary permissions are granted to the bot (such as Manage Channels, Manage Roles, etc.).
+Click "Authorize" and complete any CAPTCHA if prompted.
+Step 3: Set Up the Server Using the Bot
+Check if the Bot is Online:
+
+Once invited, you should see the bot appear in the member list of your server.
+Ensure the bot's status is "Online."
+Initiate the Server Setup:
+
+In any text channel (like #general), type the command to start setting up the server.
+Command: !setup_server
+Example: !setup_server
+Watch the Magic Happen:
+
+After entering the command, the bot will begin creating the various categories and channels specified in the server setup script.
+This includes channels for different cannabis strains, gaming categories, and general server channels.
+Step 4: Customize and Manage Your Server
+Review the Setup:
+
+After the bot completes the setup, review the server structure.
+Ensure all desired categories and channels have been created.
+Add Roles and Permissions:
+
+Assign roles (e.g., Admin, Moderator, Member) and set up permissions for each role across the categories and channels.
+You may want to restrict certain channels to specific roles, especially in the Admin & Mod Channels section.
+Invite Friends and Community Members:
+
+Share your server invite link with friends or your community to start building your server's population.
+Customize your server invite settings (e.g., invite link expiration, max number of uses).
+Additional Customizations:
+
+You can further customize the server by adding bots for moderation, music, or other functionalities.
+Update the channel topics, server description, and server icon to match your server’s theme.
+Step 5: Troubleshooting & Support
+Bot Issues:
+
+If the bot doesn't respond to the !setup_server command, check if it has the necessary permissions (Manage Channels, Manage Roles, etc.).
+Ensure the bot is online and properly added to the server.
+Manual Adjustments:
+
+If the bot misses any channels or categories, you can manually create them following the structure outlined in the instructions.
+Getting Help:
+
+For any issues or questions, refer to the bot's documentation or contact the bot developer for support.
